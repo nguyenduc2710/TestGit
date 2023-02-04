@@ -1,0 +1,44 @@
+body{
+    margin: 0;
+}
+
+.header{
+    width: 100%;
+    border-bottom: 1px solid rgba(1,1,1,0.4);
+}
+
+.header-nav-up {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    text-align: center;
+    padding: 12px 0;
+    justify-content: center;
+}
+  
+.ivisible-bar, 
+.wrap-logo, 
+.utility-list{
+    width: 33%;
+}
+
+.header-logo {
+    width: 240px;
+}
+
+.utility-list {
+    list-style: none;
+    display: flex;
+    font-size: 16px;
+    justify-content: center;
+}
+
+.utility-item {
+    color: black;
+    font-size: 24px;
+    margin: 0 12px;
+}
+
+.header-icon{
+    cursor: pointer;
+}
