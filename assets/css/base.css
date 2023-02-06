@@ -6,6 +6,6 @@ html {
     /* Convert 10px -> 1 rem */
     font-size: 62.5%;
     line-height: 1.6rem;
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Quicksand', sans-serif, 'Times New Roman', Times, serif;
     box-sizing: border-box;
 }
