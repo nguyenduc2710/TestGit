@@ -9,13 +9,14 @@
     <link rel="stylesheet" href="node_modules/bootstrap/dist/js/bootstrap.bundle.js">
     <link rel="stylesheet" href="assets/css/base.css">
     <link rel="stylesheet" href="assets/css/home.css">
-
+    <link rel="icon" type="image/png" href="assets/images/LogoDoneEdited.png" />
     <title>AmoraShop</title>
 
 </head>
 
 <body>
     <div class="wrapper">
+
         <header class="header">
             <div class="header-nav-up">
                 <div class="ivisible-bar"></div>
@@ -45,57 +46,58 @@
             </div>
         </header>
 
-        <div class="body-container">
-            <section class="vh-100">
-                <div class="container py-5 h-100">
-                  <div class="row d-flex align-items-center justify-content-center h-100">
-                    <div class="col-md-8 col-lg-7 col-xl-6">
-                      <img src="https://mdbcdn.b-cdn.net/img/Photos/new-templates/bootstrap-login-form/draw2.svg"
-                        class="img-fluid" alt="Phone image">
-                    </div>
-                    <div class="col-md-7 col-lg-5 col-xl-5 offset-xl-1">
-                      <form>
-                        <!-- Email input -->
-                        <div class="form-outline mb-4">
-                          <input type="email" id="form1Example13" class="form-control form-control-lg" />
-                          <label class="form-label" for="form1Example13">Email address</label>
-                        </div>
-              
-                        <!-- Password input -->
-                        <div class="form-outline mb-4">
-                          <input type="password" id="form1Example23" class="form-control form-control-lg" />
-                          <label class="form-label" for="form1Example23">Password</label>
-                        </div>
-              
-                        <div class="d-flex justify-content-around align-items-center mb-4">
-                          <!-- Checkbox -->
-                          <div class="form-check">
-                            <input class="form-check-input" type="checkbox" value="" id="form1Example3" checked />
-                            <label class="form-check-label" for="form1Example3"> Remember me </label>
-                          </div>
-                          <a href="#!">Forgot password?</a>
-                        </div>
-              
-                        <!-- Submit button -->
-                        <button type="submit" class="btn btn-primary btn-lg btn-block">Sign in</button>
-              
-                        <div class="divider d-flex align-items-center my-4">
-                          <p class="text-center fw-bold mx-3 mb-0 text-muted">OR</p>
-                        </div>
-              
-                        <a class="btn btn-primary btn-lg btn-block" style="background-color: #3b5998" href="#!"
-                          role="button">
-                          <i class="fab fa-facebook-f me-2"></i>Continue with Facebook
-                        </a>
-                        <a class="btn btn-primary btn-lg btn-block" style="background-color: #55acee" href="#!"
-                          role="button">
-                          <i class="fab fa-twitter me-2"></i>Continue with Twitter</a>
-              
-                      </form>
-                    </div>
-                  </div>
+        <div class="login-signup-container row">
+            <div class="login-signup-block col-6 ">
+                <div class="img-container">
+                    <img src="assets/images/LogoDoneEdited.png" alt="" class="login-page-logo">
                 </div>
-              </section>
+            </div>
+            <div class="login-signup-block col-6 ">
+                <form class="login-signup-wrapper" action="">
+                    <div class="login-signup-title">
+                        Sign Up
+                        <div class="slash-decor"></div>
+                    </div>
+                    <input type="text" id="user-fullname" class="user-login-signup-input" placeholder="Full Name"/>
+                    <div id="customer-gender-wrap">
+                        <input type="radio" id="radio1" value="Male" name="customer-gender">
+                        <label for="radio1">Male</label>
+                        
+                        <input type="radio" id="radio0" value="Female" name="customer-gender">
+                        <label for="radio0">Female</label>
+                    </div>
+
+                    <input type="email" id="user-email" class="user-login-signup-input" placeholder="Email"/>
+                    <input type="password" id="user-email-password" class="user-login-signup-input" placeholder="Password"/>
+                    <input type="password" id="user-email-password" class="user-login-signup-input" placeholder="Repeat password"/>
+                    <input type="text" id="user-address" class="user-login-signup-input" placeholder="Address"/>
+                    <input type="text" id="user-phone-num" class="user-login-signup-input" placeholder="Phone number"/>
+                    
+                    <!-- Submit button -->
+                    <div class="action-bottom col">
+                        <button type="submit" class="button-57 col-3">
+                            <span>Sign up</span>
+                            <span>Sign up</span>
+                        </button>
+
+                        <div class="action-to-home col-4">
+                            <a href="#">
+                                <img id="action-to-home-icon" src="assets/font/chevron_left_FILL0_wght400_GRAD0_opsz48.svg" alt="Back to home">
+                                Back to home
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="divider d-flex align-items-center my-4">
+                        <p class="text-center fw-bold mx-3 mb-0 text-muted">OR</p>
+                    </div>
+
+                    <a class="btn btn-primary btn-lg btn-block" style="background-color: #3b5998" href="#!"
+                        role="button">
+                        <i class="fab fa-facebook-f me-2"></i>Continue with Facebook
+                    </a>
+                </form>
+            </div>
         </div>
 
         <footer class="footer">
@@ -125,8 +127,9 @@
                             Gmail: hongducnguyenho0@gmail.com
                         </div>
                         <div class="inner-footer-text">
-                            Address: FPT University 
-                            Lô E2a-7, Đường D1, Đ. D1, Long Thạnh Mỹ, Thành Phố Thủ Đức, Thành phố Hồ Chí Minh 700000, Việt Nam
+                            Address: FPT University
+                            Lô E2a-7, Đường D1, Đ. D1, Long Thạnh Mỹ, Thành Phố Thủ Đức, Thành phố Hồ Chí Minh 700000,
+                            Việt Nam
                         </div>
                     </div>
 

@@ -9,3 +9,7 @@ html {
     font-family: 'Quicksand', sans-serif, 'Times New Roman', Times, serif;
     box-sizing: border-box;
 }
+
+:root{
+    --main-page-color: #518372;
+}
