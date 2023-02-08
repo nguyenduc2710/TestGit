@@ -325,7 +325,11 @@ body {
     font-weight: 500;
     border: 1px solid transparent;
     border-radius: 2px;
-
+}
+.user-login-signup-input:focus{
+    outline: none;
+    border-color: #ededed;
+    background: #fff;
 }
 
 /* adjust radio button */

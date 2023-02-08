@@ -1,0 +1,19 @@
+.banner {
+    max-height: 62rem;
+    overflow: hidden;
+}
+
+.body{
+    height: 2000px;
+}
+.img-wrapper{
+    max-height: 600px;
+}
+
+.mySlides {
+    display:none;
+}
+
+.test-img {
+    display:none;
+}
