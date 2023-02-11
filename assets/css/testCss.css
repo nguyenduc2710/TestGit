@@ -1,19 +1,66 @@
 .banner {
-    max-height: 62rem;
-    overflow: hidden;
+  max-height: 62rem;
+  overflow: hidden;
 }
 
-.body{
-    height: 2000px;
-}
-.img-wrapper{
-    max-height: 600px;
+.body {
+  height: 2000px;
 }
 
-.mySlides {
-    display:none;
+.img-wrapper {
+  max-height: 600px;
 }
 
-.test-img {
-    display:none;
+.slider {
+  width: 100%;
+  overflow: hidden;
+}
+
+.slide {
+  width: 100%;
+  height: 200px;
+  float: left;
+  animation: slide-animation 8s linear forwards;
+}
+
+@keyframes slide-animation {
+  from {
+    transform: translateX(-100%);
+  }
+
+  to {
+    transform: translateX(100%);
+  }
+}
+
+
+.main-menu-item {
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+
+
+  transform: scaleX(0);
+  transform-origin: 50%;
+
+
+  transform: scaleX(1);
+
+}
+
+#underline{
+  border: 1px solid black;
+  height: 2px;
+  
+
+}
+
+@keyframes underlineSwipe {
+    from{
+      
+    }
+    to{
+
+    }
 }

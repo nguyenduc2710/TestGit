@@ -14,8 +14,8 @@
     <link rel="icon" type="image/png" href="assets/images/LogoDoneEdited.png" />
     <title>AmoraShop</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
-    <link rel="stylesheet"
-        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+    <!-- <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"> -->
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
@@ -29,7 +29,6 @@
                 <div class="ivisible-bar"></div>
                 <div class="wrap-logo">
                     <img class="header-logo" src="assets/images/HomeLogo.png" alt="AmoraShop">
-                    
                 </div>
                 <ul class="utility-list">
                     <li class="utility-item">
@@ -45,146 +44,165 @@
             </div>
             <div class="header-nav-down">
                 <ul class="main-menu-list">
-                    <li class="main-menu-item">Home</li>
-                    <li class="main-menu-item">Shop</li>
-                    <li class="main-menu-item">Brand</li>
-                    <li class="main-menu-item">New Arrivals</li>
-                    <li class="main-menu-item">Sale</li>
+                    <a class="header-nav-link" href="home.html">
+                        <li class="main-menu-item">Home</li>
+                        <div id="underline"></div>
+                    </a>
+                    <a class="header-nav-link" href="products.html">
+                        <li class="main-menu-item">Shop</li>
+                        <div id="underline"></div>
+                    </a>
+                    <a class="header-nav-link" href="#">
+                        <li class="main-menu-item">Brand</li>
+                        <div id="underline"></div>
+                    </a>
+                    <a class="header-nav-link" href="#">
+                        <li class="main-menu-item">New Arrivals</li>
+                        <div id="underline"></div>
+                    </a>
+                    <a class="header-nav-link" href="#">
+                        <li class="main-menu-item">Sale</li>
+                        <div id="underline"></div>
+                    </a>
                 </ul>
             </div>
         </header>
 
         <div class="body-container">
 
-            <div class="banner">
-                <img class="img-fluid home-banner" src="assets/images/HappyNewYear.jpg" alt="Happy Cat Year 2023">
-                <img class="img-fluid home-banner" src="assets/images/.jpg" alt="Beautiful man likely perfume">
-                <img class="img-fluid home-banner" src="assets/images/HappyNewYear.jpg" alt="Beautiful woman likely perfume">
+            <div id="banner">
+                <img class="mySlides home-banner" src="assets/images/happyNewYearWhiteTheme.jpg" alt="Happy Cat Year 2023">
+                <img class="mySlides home-banner" src="assets/images/threePerfumeBottleBlackTheme.png" alt="Beautiful man likely perfume">
+                <img class="mySlides home-banner" src="assets/images/twoPefumeWomanTheme.png" alt="Beautiful woman likely perfume">
+                <button class="button-navigation-banner prev-banner-button" onclick="plusDivs(-1)">&#10094;</button>
+                <button class="button-navigation-banner next-banner-button" onclick="plusDivs(1)">&#10095;</button>
             </div>
             <div class="new-product row">
                 <h2 class="new-product-title">New Products</h2>
-                <div class="row owl-carousel">
-                    
-                    <div class="item">
-                        <div class="product-img-wrap">
-                            <img src="assets/images/SensualRomance.png" alt="" class="product-img img-fluid" />
+                <div class="owl-carou-container">
+                    <div class="owl-carousel owl-theme">
+                        
+                        <div class="item">
+                            <div class="product-img-wrap">
+                                <img src="assets/images/SensualRomance.png" alt="" class="product-img img-fluid" />
+                            </div>
+                            <div class="product-name">
+                                Sensual Romance
+                            </div>
+                            <div class="product-price">
+                                $50
+                            </div>
                         </div>
-                        <div class="product-name">
-                            Sensual Romance
+    
+                        <div class="item">
+                            <div class="product-img-wrap">
+                                <img src="assets/images/ElegantBloomGucci.png" alt="" class="product-img img-fluid" />
+                            </div>
+                            <div class="product-name">
+                                Elegant Bloom
+                            </div>
+                            <div class="product-price">
+                                $60
+                            </div>
                         </div>
-                        <div class="product-price">
-                            $50
+    
+                        <div class="item">
+                            <div class="product-img-wrap">
+                                <img src="assets/images/FreshOcean.png" alt="" class="product-img img-fluid" />
+                            </div>
+                            <div class="product-name">
+                                Fresh Ocean
+                            </div>
+                            <div class="product-price">
+                                $70
+                            </div>
                         </div>
+    
+                        <div class="item">
+                            <div class="product-img-wrap">
+                                <img src="assets/images/CitrusBliss.png" alt="" class="product-img img-fluid" />
+                            </div>
+                            <div class="product-name">
+                                Citrus Bliss
+                            </div>
+                            <div class="product-price">
+                                $80
+                            </div>
+                        </div>
+    
+                        <div class="item">
+                            <div class="product-img-wrap">
+                                <img src="assets/images/WoodyMystique.png" alt="" class="product-img img-fluid" />
+                            </div>
+                            <div class="product-name">
+                                Woody Mystique
+                            </div>
+                            <div class="product-price">
+                                $90
+                            </div>
+                        </div>
+    
+                        <div class="item">
+                            <div class="product-img-wrap">
+                                <img src="assets/images/WoodyMystique.png" alt="" class="product-img img-fluid" />
+                            </div>
+                            <div class="product-name">
+                                Woody Mystique
+                            </div>
+                            <div class="product-price">
+                                $90
+                            </div>
+                        </div>
+    
+                        <div class="item">
+                            <div class="product-img-wrap">
+                                <img src="assets/images/WoodyMystique.png" alt="" class="product-img img-fluid" />
+                            </div>
+                            <div class="product-name">
+                                Woody Mystique
+                            </div>
+                            <div class="product-price">
+                                $90
+                            </div>
+                        </div>
+    
+                        <div class="item">
+                            <div class="product-img-wrap">
+                                <img src="assets/images/WoodyMystique.png" alt="" class="product-img img-fluid" />
+                            </div>
+                            <div class="product-name">
+                                Woody Mystique
+                            </div>
+                            <div class="product-price">
+                                $90
+                            </div>
+                        </div>
+    
+                        <div class="item">
+                            <div class="product-img-wrap">
+                                <img src="assets/images/WoodyMystique.png" alt="" class="product-img img-fluid" />
+                            </div>
+                            <div class="product-name">
+                                Woody Mystique
+                            </div>
+                            <div class="product-price">
+                                $90
+                            </div>
+                        </div>
+    
+                        <div class="item">
+                            <div class="product-img-wrap">
+                                <img src="assets/images/WoodyMystique.png" alt="" class="product-img img-fluid" />
+                            </div>
+                            <div class="product-name">
+                                Woody Mystique
+                            </div>
+                            <div class="product-price">
+                                $90
+                            </div>
+                        </div>
+            
                     </div>
-
-                    <div class="item">
-                        <div class="product-img-wrap">
-                            <img src="assets/images/ElegantBloomGucci.png" alt="" class="product-img img-fluid" />
-                        </div>
-                        <div class="product-name">
-                            Elegant Bloom
-                        </div>
-                        <div class="product-price">
-                            $60
-                        </div>
-                    </div>
-
-                    <div class="item">
-                        <div class="product-img-wrap">
-                            <img src="assets/images/FreshOcean.png" alt="" class="product-img img-fluid" />
-                        </div>
-                        <div class="product-name">
-                            Fresh Ocean
-                        </div>
-                        <div class="product-price">
-                            $70
-                        </div>
-                    </div>
-
-                    <div class="item">
-                        <div class="product-img-wrap">
-                            <img src="assets/images/CitrusBliss.png" alt="" class="product-img img-fluid" />
-                        </div>
-                        <div class="product-name">
-                            Citrus Bliss
-                        </div>
-                        <div class="product-price">
-                            $80
-                        </div>
-                    </div>
-
-                    <div class="item">
-                        <div class="product-img-wrap">
-                            <img src="assets/images/WoodyMystique.png" alt="" class="product-img img-fluid" />
-                        </div>
-                        <div class="product-name">
-                            Woody Mystique
-                        </div>
-                        <div class="product-price">
-                            $90
-                        </div>
-                    </div>
-
-                    <div class="item">
-                        <div class="product-img-wrap">
-                            <img src="assets/images/WoodyMystique.png" alt="" class="product-img img-fluid" />
-                        </div>
-                        <div class="product-name">
-                            Woody Mystique
-                        </div>
-                        <div class="product-price">
-                            $90
-                        </div>
-                    </div>
-
-                    <div class="item">
-                        <div class="product-img-wrap">
-                            <img src="assets/images/WoodyMystique.png" alt="" class="product-img img-fluid" />
-                        </div>
-                        <div class="product-name">
-                            Woody Mystique
-                        </div>
-                        <div class="product-price">
-                            $90
-                        </div>
-                    </div>
-
-                    <div class="item">
-                        <div class="product-img-wrap">
-                            <img src="assets/images/WoodyMystique.png" alt="" class="product-img img-fluid" />
-                        </div>
-                        <div class="product-name">
-                            Woody Mystique
-                        </div>
-                        <div class="product-price">
-                            $90
-                        </div>
-                    </div>
-
-                    <div class="item">
-                        <div class="product-img-wrap">
-                            <img src="assets/images/WoodyMystique.png" alt="" class="product-img img-fluid" />
-                        </div>
-                        <div class="product-name">
-                            Woody Mystique
-                        </div>
-                        <div class="product-price">
-                            $90
-                        </div>
-                    </div>
-
-                    <div class="item">
-                        <div class="product-img-wrap">
-                            <img src="assets/images/WoodyMystique.png" alt="" class="product-img img-fluid" />
-                        </div>
-                        <div class="product-name">
-                            Woody Mystique
-                        </div>
-                        <div class="product-price">
-                            $90
-                        </div>
-                    </div>
-        
                 </div>
             </div>
             <div class="top-pf-brand-container row">

@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #tree {
+            font-family: sans-serif;
+            font-size: 14px;
+            line-height: 1.5;
+        }
+
+        #tree ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        #tree input[type="checkbox"] {
+            display: none;
+        }
+
+        #tree label {
+            cursor: pointer;
+            transition: color 0.2s ease-in-out;
+        }
+
+        #tree label:hover {
+            color: blue;
+        }
+
+        #tree li>ul {
+            display: none;
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.2s ease-in-out;
+        }
+
+        #tree input[type="checkbox"]:checked~ul {
+            display: block;
+            max-height: 500px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- <div id="tree">
+        <ul>
+            <li>
+                <label for="node-1">Node 1</label>
+                <input type="checkbox" id="node-1" />
+                <ul>
+                    <li>
+                        <label for="node-1-1">Node 1-1</label>
+                        <input type="checkbox" id="node-1-1" />
+                        <ul>
+                            <li>
+                                <label for="node-1-1-1">Node 1-1-1</label>
+                                <input type="checkbox" id="node-1-1-1" />
+                                <ul>
+                                    <li>
+                                        <label for="node-1-1-1-1">Node 1-1-1-1</label>
+                                        <input type="checkbox" id="node-1-1-1-1" />
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <label for="node-1-1-2">Node 1-1-2</label>
+                                <input type="checkbox" id="node-1-1-2" />
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <label for="node-1-2">Node 1-2</label>
+                        <input type="checkbox" id="node-1-2" />
+                    </li>
+                </ul>
+            </li>
+        </ul>
+    </div> -->
+
+    <ul class="main-menu-list">
+        <div id="underline"></div>
+        <a class="header-nav-link" href="home.html">
+            <li class="main-menu-item">Home</li>
+        </a>
+        <a class="header-nav-link" href="products.html">
+            <li class="main-menu-item">Shop</li>
+        </a>
+        <a class="header-nav-link" href="#">
+            <li class="main-menu-item">Brand</li>
+        </a>
+        <a class="header-nav-link" href="#">
+            <li class="main-menu-item">New Arrivals</li>
+        </a>
+        <a class="header-nav-link" href="#">
+            <li class="main-menu-item">Sale</li>
+        </a>
+    </ul>
+
+    <script>
+        const tree = document.getElementById("tree");
+        tree.addEventListener("change", function (event) {
+            const checkbox = event.target;
+            const checked = checkbox.checked;
+            const parentNode = checkbox.parentNode;
+            const subTree = parentNode.getElementsByTagName("ul")[0];
+
+            if (subTree) {
+                subTree.style.maxHeight = checked ? "500px" : "0";
+                subTree.style.display = checked ? "block" : "none";
+            }
+        });
+
+
+    </script>
+</body>
+
+</html>

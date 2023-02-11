@@ -9,7 +9,13 @@
     <link rel="stylesheet" href="node_modules/bootstrap/dist/js/bootstrap.bundle.js">
     <link rel="stylesheet" href="assets/css/base.css">
     <link rel="stylesheet" href="assets/css/home.css">
+    <link rel="stylesheet" href="assets/css/slider.css">
     <link rel="icon" type="image/png" href="assets/images/LogoDoneEdited.png"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+
     <title>AmoraShop</title>
 
 </head>
@@ -36,78 +42,168 @@
             </div>
             <div class="header-nav-down">
                 <ul class="main-menu-list">
-                    <li class="main-menu-item">Home</li>
-                    <li class="main-menu-item">Shop</li>
-                    <li class="main-menu-item">Brand</li>
-                    <li class="main-menu-item">New Arrivals</li>
-                    <li class="main-menu-item">Sale</li>
+                    <div id="underline"></div>
+                    <a class="header-nav-link" href="home.html">
+                        <li class="main-menu-item">Home</li>
+                    </a>
+                    <a class="header-nav-link" href="products.html">
+                        <li class="main-menu-item">Shop</li>
+                    </a>
+                    <a class="header-nav-link" href="#">
+                        <li class="main-menu-item">Brand</li>
+                    </a>
+                    <a class="header-nav-link" href="#">
+                        <li class="main-menu-item">New Arrivals</li>
+                    </a>
+                    <a class="header-nav-link" href="#">
+                        <li class="main-menu-item">Sale</li>
+                    </a>
+
                 </ul>
             </div>
         </header>
 
         <div class="body-container">
 
-            <div class="banner">
-                <img class="img-fluid home-banner" src="assets/images/HappyNewYearEdited.jpg" alt="Our banner">
+            <div id="banner">
+                <img class="mySlides home-banner" src="assets/images/happyNewYearWhiteTheme.jpg" alt="Happy Cat Year 2023">
+                <img class="mySlides home-banner" src="assets/images/threePerfumeBottleBlackTheme.png" alt="Beautiful man likely perfume">
+                <img class="mySlides home-banner" src="assets/images/twoPefumeWomanTheme.png" alt="Beautiful woman likely perfume">
+                <button class="button-navigation-banner prev-banner-button" onclick="plusDivs(-1)">&#10094;</button>
+                <button class="button-navigation-banner next-banner-button" onclick="plusDivs(1)">&#10095;</button>
             </div>
+
+            <!--          New Products Section         -->
             <div class="new-product row">
                 <h2 class="new-product-title">New Products</h2>
-                <div class="product-block">
-                    <div class="product-img-wrap">
-                        <img src="assets/images/SensualRomance.png" alt="" class="product-img img-fluid" />
-                    </div>
-                    <div class="product-name">
-                        Sensual Romance
-                    </div>
-                    <div class="product-price">
-                        $50
-                    </div>
-                </div>
-                <div class="product-block">
-                    <div class="product-img-wrap">
-                        <img src="assets/images/ElegantBloomGucci.png" alt="" class="product-img img-fluid" />
-                    </div>
-                    <div class="product-name">
-                        Elegant Bloom
-                    </div>
-                    <div class="product-price">
-                        $60
-                    </div>
-                </div>
-                <div class="product-block">
-                    <div class="product-img-wrap">
-                        <img src="assets/images/FreshOcean.png" alt="" class="product-img img-fluid" />
-                    </div>
-                    <div class="product-name">
-                        Fresh Ocean
-                    </div>
-                    <div class="product-price">
-                        $70
-                    </div>
-                </div>
-                <div class="product-block">
-                    <div class="product-img-wrap">
-                        <img src="assets/images/CitrusBliss.png" alt="" class="product-img img-fluid" />
-                    </div>
-                    <div class="product-name">
-                        Citrus Bliss
-                    </div>
-                    <div class="product-price">
-                        $80
-                    </div>
-                </div>
-                <div class="product-block">
-                    <div class="product-img-wrap">
-                        <img src="assets/images/WoodyMystique.png" alt="" class="product-img img-fluid" />
-                    </div>
-                    <div class="product-name">
-                        Woody Mystique
-                    </div>
-                    <div class="product-price">
-                        $90
+                <div class="owl-carou-container">
+                    <div class="owl-carousel owl-theme">
+                        
+                        <div class="item">
+                            <div class="product-img-wrap">
+                                <img src="assets/images/SensualRomance.png" alt="" class="product-img img-fluid" />
+                            </div>
+                            <div class="product-name">
+                                Sensual Romance
+                            </div>
+                            <div class="product-price">
+                                $50
+                            </div>
+                        </div>
+    
+                        <div class="item">
+                            <div class="product-img-wrap">
+                                <img src="assets/images/ElegantBloomGucci.png" alt="" class="product-img img-fluid" />
+                            </div>
+                            <div class="product-name">
+                                Elegant Bloom
+                            </div>
+                            <div class="product-price">
+                                $60
+                            </div>
+                        </div>
+    
+                        <div class="item">
+                            <div class="product-img-wrap">
+                                <img src="assets/images/FreshOcean.png" alt="" class="product-img img-fluid" />
+                            </div>
+                            <div class="product-name">
+                                Fresh Ocean
+                            </div>
+                            <div class="product-price">
+                                $70
+                            </div>
+                        </div>
+    
+                        <div class="item">
+                            <div class="product-img-wrap">
+                                <img src="assets/images/CitrusBliss.png" alt="" class="product-img img-fluid" />
+                            </div>
+                            <div class="product-name">
+                                Citrus Bliss
+                            </div>
+                            <div class="product-price">
+                                $80
+                            </div>
+                        </div>
+    
+                        <div class="item">
+                            <div class="product-img-wrap">
+                                <img src="assets/images/WoodyMystique.png" alt="" class="product-img img-fluid" />
+                            </div>
+                            <div class="product-name">
+                                Woody Mystique
+                            </div>
+                            <div class="product-price">
+                                $90
+                            </div>
+                        </div>
+    
+                        <div class="item">
+                            <div class="product-img-wrap">
+                                <img src="assets/images/accquaDiGio.jpg" alt="" class="product-img img-fluid" />
+                            </div>
+                            <div class="product-name">
+                                Acqua Di Gio Eau De Toilette
+                            </div>
+                            <div class="product-price">
+                                $90
+                            </div>
+                        </div>
+    
+                        <div class="item">
+                            <div class="product-img-wrap">
+                                <img src="assets/images/euphoriaEssenceEau.jpg" alt="" class="product-img img-fluid" />
+                            </div>
+                            <div class="product-name">
+                                Euphoria Essence Eau De Toilette
+                            </div>
+                            <div class="product-price">
+                                $90
+                            </div>
+                        </div>
+    
+                        <div class="item">
+                            <div class="product-img-wrap">
+                                <img src="assets/images/valentinoValentina.jpg" alt="" class="product-img img-fluid" />
+                            </div>
+                            <div class="product-name">
+                                Valentino Valentina Oud Assoluto Eau De Parfum
+                            </div>
+                            <div class="product-price">
+                                $90
+                            </div>
+                        </div>
+    
+                        <div class="item">
+                            <div class="product-img-wrap">
+                                <img src="assets/images/lavieEstBellePink.jpg" alt="" class="product-img img-fluid" />
+                            </div>
+                            <div class="product-name">
+                                La Vie Est Belle Soleil Cristal Eau De Parfum
+                            </div>
+                            <div class="product-price">
+                                $90
+                            </div>
+                        </div>
+    
+                        <div class="item">
+                            <div class="product-img-wrap">
+                                <img src="assets/images/initioGreatnessParfum.jpg" alt="" class="product-img img-fluid" />
+                            </div>
+                            <div class="product-name">
+                                Initio Oud For Greatness Eau De Parfum
+                            </div>
+                            <div class="product-price">
+                                $90
+                            </div>
+                        </div>
+            
                     </div>
                 </div>
             </div>
+
+            <!--            Top Brand Section           -->
             <div class="top-pf-brand-container row">
 
                 <div class="top-pf-brands-block col-sm-4 col-md-4">
@@ -199,6 +295,8 @@
 
     </div>
 
+
+    <script src="assets/js/script.js"></script>
 </body>
 
 </html>
