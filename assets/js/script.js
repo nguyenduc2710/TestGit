@@ -32,20 +32,33 @@ function showDivs(n) {
 
 //News Product Owl-carousel
 $('.owl-carousel').owlCarousel({
-  loop:true,
-  margin:10,
-  nav:true,
-  responsive:{
-      0:{
-          items:1
-      },
-      600:{
-          items:3
-      },
-      1000:{
-          items:5
-      }
+  loop: true,
+  margin: 10,
+  nav: true,
+  responsive: {
+    0: {
+      items: 1
+    },
+    600: {
+      items: 3
+    },
+    1000: {
+      items: 5
+    }
   }
 })
 
 
+const tree = document.getElementById("tree");
+tree.addEventListener("change", function (event) {
+  const checkbox = event.target;
+  const checked = checkbox.checked;
+  const parentNode = checkbox.parentNode;
+  const subTree = parentNode.getElementsByTagName("ul")[0];
+
+  if (subTree) {
+    subTree.style.maxHeight = checked ? "500px" : "0";
+    subTree.style.display = checked ? "block" : "none";
+    subTree.style.padding = checked ? "0 0 0 20px" : "none";
+  }
+});
