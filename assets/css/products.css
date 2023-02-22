@@ -307,14 +307,14 @@ input[type=number] {
     width: 8rem;
 }
 
-.search-product-title {
+.header-page-title {
     color: var(--main-page-color);
     font-size: 32px;
     font-weight: 700;
     line-height: 2;
 }
 
-.search-quantity-result{
+.header-quantity-result{
     font-size: 14px;
 }
 

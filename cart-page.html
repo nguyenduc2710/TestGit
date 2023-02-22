@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css">
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/js/bootstrap.bundle.js">
+    <link rel="stylesheet" href="assets/css/base.css">
+    <link rel="stylesheet" href="assets/css/home.css">
+    <link rel="stylesheet" href="assets/css/products.css">
+    <link rel="stylesheet" href="assets/css/cart.css">
+    <link rel="icon" type="image/png" href="assets/images/LogoDoneEdited.png" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <title>AmoraShop</title>
+
+</head>
+
+<body>
+    <header class="header">
+        <div class="header-nav-up">
+            <div class="ivisible-bar"></div>
+            <div class="wrap-logo">
+                <img class="header-logo" src="assets/images/HomeLogo.png" alt="AmoraShop">
+            </div>
+            <ul class="utility-list">
+                <li class="utility-item">
+                    <a class="header-icon"><img src="assets/font/account_circle_black_24dp.svg" alt=""></a>
+                </li>
+                <li class="utility-item js-search-btn">
+                    <a class="header-icon"><img src="assets/font/search_black_24dp.svg" alt=""></a>
+                </li>
+                <li class="utility-item">
+                    <a class="header-icon"><img src="assets/font/shopping_bag_black_24dp.svg" alt=""></a>
+                </li>
+            </ul>
+        </div>
+        <div class="header-nav-down">
+            <ul class="main-menu-list">
+                <div id="underline"></div>
+                <a class="header-nav-link" href="home.html">
+                    <li class="main-menu-item">Home</li>
+                </a>
+                <a class="header-nav-link" href="products.html">
+                    <li class="main-menu-item">Shop</li>
+                </a>
+                <a class="header-nav-link" href="#">
+                    <li class="main-menu-item">Brand</li>
+                </a>
+                <a class="header-nav-link" href="#">
+                    <li class="main-menu-item">New Arrivals</li>
+                </a>
+                <a class="header-nav-link" href="#">
+                    <li class="main-menu-item">Sale</li>
+                </a>
+
+            </ul>
+        </div>
+        <div class="search-box-container js-modal">
+            <div class="search-box js-modal-container">
+                <div class="search-box-header">
+                    <div class="search-title">
+                        SEARCH PRODUCT
+                    </div>
+
+                    <div class="search-box-exit js-modal-close">
+                        <img src="assets/font/close_black_24dp.svg" style="width: 100%;" alt="Close">
+                    </div>
+                </div>
+                <div class="search-wrapper">
+                    <input class="search-input-real-time" type="text" placeholder="Search..." />
+                    <img class="search-submit-button" src="assets/font/search_black_24dp.svg" alt="Search">
+                </div>
+            </div>
+        </div>
+    </header>
+
+
+    <div class="body-container">
+
+        <div class="bread-crumb-container">
+            <div class="bread-crumbs">
+                <a href="home.html" class="main-page link">Home</a>
+                <div class="slash">/</div>
+                <a href="#" class="main-page link">Cart</a>
+            </div>
+        </div>
+
+        <div class="search-heading-page">
+            <div class="cart-container">
+                <div class="header-text-container">
+                    <div class="header-page-title">
+                        Your Inventory
+                    </div>
+                    <div class="header-quantity-result">
+                        There are 3 products in your cart
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="cart-content-container">
+            <div class="cart-product-list row">
+                <div class="cart-item row">
+                    <div class="product-image-container col-3">
+                        <img class="cart-item-img" src="assets/images/initioGreatnessParfum.jpg"
+                            alt="Initio Greatness Parfum">
+                    </div>
+                    <div class="item-content col-9">
+                        <div class="item-name">
+                            Initio Greatness Parfum
+                        </div>
+                        <div class="item-price">
+                            90$
+                        </div>
+                        <div class="select-quantity-area">
+                            <input type="button" value="-" class="quantity-btn">
+                            <input type="text" id="quantity" name="quantity" value="1" class="quantity-selector">
+                            <input type="button" value="+" class="quantity-btn">
+                        </div>
+                        <div class="product-item-action">
+                            <a href="#" class="delete-item">
+                                <img class="detete-item-icon" src="assets/font/close_black_24dp.svg" alt="">
+                            </a>
+                            <div class="item-total-money">
+                                90$
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="cart-item row">
+                    <div class="product-image-container col-3">
+                        <img class="cart-item-img" src="assets/images/initioGreatnessParfum.jpg"
+                            alt="Initio Greatness Parfum">
+                    </div>
+                    <div class="item-content col-9">
+                        <div class="item-name">
+                            Initio Greatness Parfum
+                        </div>
+                        <div class="item-price">
+                            90$
+                        </div>
+                        <div class="select-quantity-area">
+                            <input type="button" value="-" class="quantity-btn">
+                            <input type="text" id="quantity" name="quantity" value="1" class="quantity-selector">
+                            <input type="button" value="+" class="quantity-btn">
+                        </div>
+                        <div class="product-item-action">
+                            <a href="#" class="delete-item">
+                                <img class="detete-item-icon" src="assets/font/close_black_24dp.svg" alt="">
+                            </a>
+                            <div class="item-total-money">
+                                90$
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="cart-item row">
+                    <div class="product-image-container col-3">
+                        <img class="cart-item-img" src="assets/images/initioGreatnessParfum.jpg"
+                            alt="Initio Greatness Parfum">
+                    </div>
+                    <div class="item-content col-9">
+                        <div class="item-name">
+                            Initio Greatness Parfum
+                        </div>
+                        <div class="item-price">
+                            90$
+                        </div>
+                        <div class="select-quantity-area">
+                            <input type="button" value="-" class="quantity-btn">
+                            <input type="text" id="quantity" name="quantity" value="1" class="quantity-selector">
+                            <input type="button" value="+" class="quantity-btn">
+                        </div>
+                        <div class="product-item-action">
+                            <a href="#" class="delete-item">
+                                <img class="detete-item-icon" src="assets/font/close_black_24dp.svg" alt="">
+                            </a>
+                            <div class="item-total-money">
+                                90$
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="cart-item row">
+                    <div class="product-image-container col-3">
+                        <img class="cart-item-img" src="assets/images/initioGreatnessParfum.jpg"
+                            alt="Initio Greatness Parfum">
+                    </div>
+                    <div class="item-content col-9">
+                        <div class="item-name">
+                            Initio Greatness Parfum
+                        </div>
+                        <div class="item-price">
+                            90$
+                        </div>
+                        <div class="select-quantity-area">
+                            <input type="button" value="-" class="quantity-btn">
+                            <input type="text" id="quantity" name="quantity" value="1" class="quantity-selector">
+                            <input type="button" value="+" class="quantity-btn">
+                        </div>
+                        <div class="product-item-action">
+                            <a href="#" class="delete-item">
+                                <img class="detete-item-icon" src="assets/font/close_black_24dp.svg" alt="">
+                            </a>
+                            <div class="item-total-money">
+                                90$
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="order-info-container">
+
+                <div class="order-info">
+                    Total price:
+                    <div class="total-price">
+                        999$
+                    </div>
+                </div>
+
+                <div class="order-actions">
+                    <a class="button-57" href="#" class="continues-buying-btn">
+                        <span>Continues Buying</span>
+                        <span>Continues Buying</span>
+                    </a>
+                    <a class="button-57" href="#" class="checkout-btn">
+                        <span>Check Out</span>
+                        <span>Check Out</span>
+                    </a>
+                </div>
+
+            </div>
+
+
+        </div>
+
+    </div>
+
+
+    <!-- Hiện Search Modal -->
+    <script>
+        const searchBtns = document.querySelectorAll('.js-search-btn');
+        const modal = document.querySelector('.js-modal');
+        const modalContainer = document.querySelector('.js-modal-container');
+        const modalClose = document.querySelector('.js-modal-close');
+
+        function showSearchModal() {
+            modal.classList.add('open')
+        }
+        function hideSearchModal() {
+            modal.classList.remove('open')
+        }
+
+        for (const buyBtn of searchBtns) {
+            buyBtn.addEventListener('click', showSearchModal)
+        }
+
+        modalClose.addEventListener('click', hideSearchModal)
+
+        modal.addEventListener('click', hideSearchModal)
+
+        modalContainer.addEventListener('click', function (event) {
+            event.stopPropagation()
+        })
+    </script>
+</body>
+
+</html>
