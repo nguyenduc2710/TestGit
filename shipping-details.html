@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css">
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/js/bootstrap.bundle.js">
+    <link rel="stylesheet" href="assets/css/base.css">
+    <link rel="stylesheet" href="assets/css/home.css">
+    <link rel="stylesheet" href="assets/css/cart.css">
+    <link rel="icon" type="image/png" href="assets/images/LogoDoneEdited.png" />
+    <title>AmoraShop</title>
+    <!-- include the fireworks-js library -->
+    <script src="https://cdn.jsdelivr.net/npm/fireworks-js/dist/fireworks.min.js"></script>
+
+</head>
+
+<body>
+
+
+    <div class="wrapper row">
+
+        <div class="shipping-details-section row">
+            <div class="main col-7">
+
+
+                <div class="main-header">
+                    <a href="/" class="logo-text">
+                        Amora Shop
+                    </a>
+
+                    <div class="bread-scrumb">
+                        <div class="bread-scrumb-item">
+                            <a href="#">Cart</a>
+                        </div>
+                        <div class="bread-scrumb-item">
+                            Shipping Details
+                        </div>
+                        <div class="bread-scrumb-item">
+                            Delivery Method & Payment
+                        </div>
+                    </div>
+
+
+                </div>
+
+                <div class="main-body">
+                    <div class="main-title">
+                        Shipping Details
+                    </div>
+                    <div class="logged-in-user-infor">
+                        <img src="assets/images/noneUser.png" class="logged-in-user-img" />
+                        <div class="logged-in-user">
+                            <div class="user-name-mail">
+                                Nguyễn Đức (hongducnguyenho0@gmail.com)
+                            </div>
+                            <a href="#" class="user-logout-action">
+                                Đăng xuất
+                            </a>
+                        </div>
+                    </div>
+
+                    <form class="shipping-details-form">
+                        <div class="field-input-wrapper">
+                            <input class="input-field" type="text" placeholder="Full name" />
+                        </div>
+                        <div class="field-input-wrapper">
+                            <input class="input-field" type="text" placeholder="Phone number" />
+                        </div>
+                        <div class="field-input-wrapper">
+                            <input class="input-field" type="text" placeholder="Address" />
+                        </div>
+
+                        <div class="select-form-container row">
+                            <select class="select-form col-4" id="city" aria-label=".form-select-sm">
+                                <option value="" selected>Select City</option>
+                            </select>
+
+                            <select class="select-form col-4" id="district" aria-label=".form-select-sm">
+                                <option value="" selected>Select District</option>
+                            </select>
+
+                            <select class="select-form col-4" id="ward" aria-label=".form-select-sm">
+                                <option value="" selected>Select Ward</option>
+                            </select>
+                        </div>
+
+                        <div class="shipping-details-action">
+                            <a href="#">Cart</a>
+                            <button class="continue-to-payment-btn">
+                                <a href="">Continue To Payment</a>
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+
+            <div class="side-bar col-5">
+
+                <div class="sidebar-content">
+                    <div class="order-summary">
+                        <div class="order-list">
+                            <div class="order-item">
+                                <div class="product-image-container">
+                                    <img src="assets/images/FreshOcean.png" alt="" class="cart-item-img">
+                                    <div class="buy-quantity">1</div>
+                                </div>
+                                <div class="order-describe">
+                                    <div class="order-item-name">
+                                        Fresh Ocean
+                                    </div>
+                                    <div class="order-item-capacity">
+                                        100ml
+                                    </div>
+                                    <div class="order-item-price">
+                                        50$
+                                    </div>
+                                </div>
+
+                            </div>
+
+                            <div class="order-item">
+                                <div class="product-image-container">
+                                    <img src="assets/images/FreshOcean.png" alt="" class="cart-item-img">
+                                    <div class="buy-quantity">1</div>
+                                </div>
+                                <div class="order-describe">
+                                    <div class="order-item-name">
+                                        Fresh Ocean
+                                    </div>
+                                    <div class="order-item-capacity">
+                                        100ml
+                                    </div>
+                                    <div class="order-item-price">
+                                        50$
+                                    </div>
+                                </div>
+
+                            </div>
+                            <div class="order-item">
+                                <div class="product-image-container">
+                                    <img src="assets/images/FreshOcean.png" alt="" class="cart-item-img">
+                                    <div class="buy-quantity">1</div>
+                                </div>
+                                <div class="order-describe">
+                                    <div class="order-item-name">
+                                        Fresh Ocean
+                                    </div>
+                                    <div class="order-item-capacity">
+                                        100ml
+                                    </div>
+                                    <div class="order-item-price">
+                                        50$
+                                    </div>
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                        <div class="order-total-sum">
+                            <p class="text">
+                                Total:
+                            </p>
+                            <div class="order-sum-cald">
+                                <i>Dollar</i> 1234$
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div>
+
+            </div>
+        </div>
+
+        <div class="notification-modal-wrap" style="display: none;">
+            <div class="success-order-notification">
+                <i class="icon-success">
+                    <img class="success-icon" src="assets/font/Eo_circle_green_checkmark.png" alt="Success">
+                </i>
+                <div class="success-order-context">
+                    <h3 class="success-title">
+                        Thanks for your order!
+                    </h3>
+                    <p class="success-text">
+                        Woohoo! Your order was successfully submit <br>
+                        We are on the ways to prepare for your order.
+                    </p>
+                </div>
+                <div class="success-order-actions">
+                    <button class="success-actions">
+                        Back To Home
+                    </button>
+                    <button class="success-actions">
+                        View Your Order
+                    </button>
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+
+    
+    <!-- <script>
+        // select the success order notification box
+        const successOrderNotification = document.querySelector('.success-order-notification');
+
+        // function to add the firework effect
+        function addFireworks() {
+            const container = document.createElement('div');
+            container.id = 'fireworks-container';
+            successOrderNotification.appendChild(container);
+            const fireworks = new Fireworks({
+                target: '#fireworks-container'
+            });
+            fireworks.start();
+        }
+
+        // add the firework effect when the success order notification box is first displayed
+        successOrderNotification.style.display = 'none';
+        setTimeout(() => {
+            successOrderNotification.style.display = 'block';
+            addFireworks();
+        }, 1000);
+
+    </script> -->
+
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.21.1/axios.min.js"></script>
+    <script>
+        var citis = document.getElementById("city");
+        var districts = document.getElementById("district");
+        var wards = document.getElementById("ward");
+        var Parameter = {
+            url: "https://raw.githubusercontent.com/kenzouno1/DiaGioiHanhChinhVN/master/data.json",
+            method: "GET",
+            responseType: "application/json",
+        };
+        var promise = axios(Parameter);
+        promise.then(function (result) {
+            renderCity(result.data);
+        });
+
+        function renderCity(data) {
+            for (const x of data) {
+                citis.options[citis.options.length] = new Option(x.Name, x.Id);
+            }
+            citis.onchange = function () {
+                district.length = 1;
+                ward.length = 1;
+                if (this.value != "") {
+                    const result = data.filter(n => n.Id === this.value);
+
+                    for (const k of result[0].Districts) {
+                        district.options[district.options.length] = new Option(k.Name, k.Id);
+                    }
+                }
+            };
+            district.onchange = function () {
+                ward.length = 1;
+                const dataCity = data.filter((n) => n.Id === citis.value);
+                if (this.value != "") {
+                    const dataWards = dataCity[0].Districts.filter(n => n.Id === this.value)[0].Wards;
+
+                    for (const w of dataWards) {
+                        wards.options[wards.options.length] = new Option(w.Name, w.Id);
+                    }
+                }
+            };
+        }
+    </script> -->
+</body>
+
+</html>

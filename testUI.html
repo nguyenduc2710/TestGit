@@ -5,64 +5,140 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="assets/css/testCss.css">
+    <link rel="stylesheet" href="assets/css/testCss2.css">
+    <link rel="stylesheet" href="assets/css/cart.css">
+    <link rel="stylesheet" href="assets/css/products.css">
+    <script src="assets/js/firework.js"></script>
     <title>Document</title>
     <style>
-        .slider {
-            position: relative;
-        }
+		.tick-icon {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  border: 2px solid black;
+  box-sizing: border-box;
+  position: relative;
+  animation: tick 1s ease-in-out forwards;
+}
 
-        .slide {
-            position: absolute;
-            top: 0;
-            left: 0;
-            opacity: 0;
-            transition: opacity 1s ease-in-out;
-        }
+.tick-icon:before {
+  content: "";
+  width: 10px;
+  height: 20px;
+  border: 2px solid black;
+  position: absolute;
+  top: 8px;
+  left: 5px;
+  transform: rotate(-45deg);
+}
 
-        .slide.active {
-            opacity: 1;
-        }
-    </style>
+@keyframes tick {
+  0% {
+    background-color: black;
+  }
+  100% {
+    background-color: green;
+  }
+}
+
+	</style>
 </head>
 
 <body>
-
-<div class="slide-wrap">
-    <div class="slider">
-        <img class="slide" src="assets/images/perfume-quotes-1.jpg">
-        <img class="slide" src="assets/images/perfume-quotes-3-attraction-scaled.jpg">
-        <img class="slide" src="assets/images/perfume-quotes-4-love.jpg">
-    </div>
-</div>
+    <div class="tick-icon"></div>
+    
 
 
-    <Script>
-        const slides = document.querySelectorAll('.slide');
-        let currentSlide = 0;
 
-        // Set initial active slide
-        slides[currentSlide].classList.add('active');
-
-        // Change slide every 3 seconds
-        setInterval(() => {
-            // Remove active class from current slide
-            slides[currentSlide].classList.remove('active');
-
-            // Move to next slide
-            currentSlide = (currentSlide + 1) % slides.length;
-
-            // Add active class to next slide
-            slides[currentSlide].classList.add('active');
-        }, 3000);
-
-    </Script>
 </body>
 
 </html>
 
 
 
+
+
+
+
+
+
+<!-- <div class="login-box">
+        <h2>LoginForm</h2>
+        <form>
+          <div class="user-box">
+            <input type="text" name="" required="">
+            <label>Full Name</label>
+          </div>
+          <div class="user-box">
+            <input type="text" name="" required="">
+            <label>Phone</label>
+          </div>
+          <div class="user-box">
+            <input type="text" name="" required="" placeholder="Street / District / City">
+            <label>Address</label>
+          </div>
+        
+          <a href="#">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            Login
+          </a>
+        </form>
+      </div> -->
+
+
+
+
+
+
+
+<!-- Auto change slide -->
+<!-- <style>
+    .slider {
+        position: relative;
+    }
+
+    .slide {
+        position: absolute;
+        top: 0;
+        left: 0;
+        opacity: 0;
+        transition: opacity 1s ease-in-out;
+    }
+
+    .slide.active {
+        opacity: 1;
+    }
+</style> -->
+<!-- <div class="slide-wrap">
+    <div class="slider">
+        <img class="slide" src="assets/images/perfume-quotes-1.jpg">
+        <img class="slide" src="assets/images/perfume-quotes-3-attraction-scaled.jpg">
+        <img class="slide" src="assets/images/perfume-quotes-4-love.jpg">
+    </div>
+</div> -->
+<!-- <Script>
+    const slides = document.querySelectorAll('.slide');
+    let currentSlide = 0;
+
+    // Set initial active slide
+    slides[currentSlide].classList.add('active');
+
+    // Change slide every 3 seconds
+    setInterval(() => {
+        // Remove active class from current slide
+        slides[currentSlide].classList.remove('active');
+
+        // Move to next slide
+        currentSlide = (currentSlide + 1) % slides.length;
+
+        // Add active class to next slide
+        slides[currentSlide].classList.add('active');
+    }, 3000);
+
+</Script> -->
 <!-- Tree Node -->
 <!-- <div id="tree">
     <ul>

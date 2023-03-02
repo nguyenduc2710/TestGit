@@ -15,8 +15,9 @@
     <title>AmoraShop</title>
 
 </head>
+
 <body>
-    
+
     <div class="wrapper">
 
         <header class="header">
@@ -87,15 +88,18 @@
                         70$
                     </div>
 
-                    <form class="buy-area" action="">
+                    <form class="buy-area" action="cart-page.html" onsubmit="return validateQuantity()">
                         <div class="select-quantity-area">
-                            <input type="button" value="-" class="quantity-btn">
-                            <input type="text" id="quantity" name="quantity" value="1" class="quantity-selector">
-                            <input type="button" value="+" class="quantity-btn">
+                            <input type="button" value="-" onclick="decrementQuantity()" class="quantity-btn">
+                            <input type="number" id="quantity" name="quantity" min="1" value="1"
+                                class="quantity-selector">
+                            <input type="button" value="+" onclick="incrementQuantity()" class="quantity-btn">
                         </div>
-                        <button type="submit" class="add-to-cart-btn button-57">
-                            <span>ADD TO CART</span>   
-                            <span>ADD TO CART</span>   
+                        
+                        <p id="warning" style="display: none; color: red;">Please select a quantity greater than 0</p>
+                        <button type="submit" class="add-to-cart-btn button-57" onclick="validateForm(event)">
+                            <span>ADD TO CART</span>
+                            <span>ADD TO CART</span>
                         </button>
                     </form>
 
@@ -105,7 +109,10 @@
                             Capacity: 50 ml<br>
                             Style: Youthful, Dynamic<br>
                             Longevity: 6-8 hours<br><br>
-                            Cindy Bloom - Fresh Ocean is for those who love freedom, explore nature and the beauty of the sea. Impressed by the fresh scent of citrus. Middle notes bring light sensations from rose, lily-of-the-valley and jasmine. The last fragrance creates a smooth, romantic and rhythmic scent of the sea.
+                            Cindy Bloom - Fresh Ocean is for those who love freedom, explore nature and the beauty of
+                            the sea. Impressed by the fresh scent of citrus. Middle notes bring light sensations from
+                            rose, lily-of-the-valley and jasmine. The last fragrance creates a smooth, romantic and
+                            rhythmic scent of the sea.
                         </p>
                     </div>
 
@@ -141,8 +148,9 @@
                             Gmail: hongducnguyenho0@gmail.com
                         </div>
                         <div class="inner-footer-text">
-                            Address: FPT University 
-                            Lô E2a-7, Đường D1, Đ. D1, Long Thạnh Mỹ, Thành Phố Thủ Đức, Thành phố Hồ Chí Minh 700000, Việt Nam
+                            Address: FPT University
+                            Lô E2a-7, Đường D1, Đ. D1, Long Thạnh Mỹ, Thành Phố Thủ Đức, Thành phố Hồ Chí Minh 700000,
+                            Việt Nam
                         </div>
                     </div>
 
@@ -155,5 +163,48 @@
 
     </div>
 
+    <script>
+        function validateQuantity() {
+            const quantityInput = document.getElementById("quantity");
+            const quantityValue = parseInt(quantityInput.value);
+
+            if (quantityValue <= 0 || isNaN(quantityValue)) {
+                alert("Please select a valid quantity.");
+                return false;
+            }
+
+            return true;
+        }
+
+        function validateForm(event) {
+            event.preventDefault();
+            const quantity = parseInt(document.getElementById("quantity").value);
+            const warning = document.getElementById("warning");
+
+            if (quantity <= 0 || isNaN(quantity)) {
+                warning.style.display = "block";
+                return false;
+            } else {
+                warning.style.display = "none";
+                event.target.closest("form").submit();
+            }
+        }
+
+        function incrementQuantity() {
+            var quantityInput = document.getElementById("quantity");
+            var currentQuantity = parseInt(quantityInput.value);
+            quantityInput.value = currentQuantity + 1;
+        }
+
+        function decrementQuantity() {
+            var quantityInput = document.getElementById("quantity");
+            var currentQuantity = parseInt(quantityInput.value);
+            if (currentQuantity > 1) {
+                quantityInput.value = currentQuantity - 1;
+            }
+        }
+
+    </script>
 </body>
+
 </html>

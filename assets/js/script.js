@@ -62,3 +62,29 @@ tree.addEventListener("change", function (event) {
     subTree.style.padding = checked ? "0 0 0 20px" : "none";
   }
 });
+
+function validateQuantity() {
+  const quantityInput = document.getElementById("quantity");
+  const quantityValue = parseInt(quantityInput.value);
+
+  if (quantityValue <= 0 || isNaN(quantityValue)) {
+    alert("Please select a valid quantity.");
+    return false;
+  }
+
+  return true;
+}
+
+function validateForm(event) {
+  event.preventDefault();
+  const quantity = parseInt(document.getElementById("quantity").value);
+  const warning = document.getElementById("warning");
+
+  if (quantity <= 0 || isNaN(quantity)) {
+    warning.style.display = "block";
+    return false;
+  } else {
+    warning.style.display = "none";
+    event.target.closest("form").submit();
+  }
+}

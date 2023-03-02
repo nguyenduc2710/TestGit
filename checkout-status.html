@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css">
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/js/bootstrap.bundle.js">
+    <link rel="stylesheet" href="assets/css/base.css">
+    <link rel="stylesheet" href="assets/css/home.css">
+    <link rel="stylesheet" href="assets/css/products.css">
+    <link rel="stylesheet" href="assets/css/cart.css">
+    <link rel="icon" type="image/png" href="assets/images/LogoDoneEdited.png" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <title>AmoraShop</title>
+
+</head>
+
+<body>
+
+    <div class="wrapper">
+        <header class="header">
+            <div class="header-nav-up">
+                <div class="ivisible-bar"></div>
+                <div class="wrap-logo">
+                    <img class="header-logo" src="assets/images/HomeLogo.png" alt="AmoraShop">
+                </div>
+                <ul class="utility-list">
+                    <li class="utility-item">
+                        <a class="header-icon"><img src="assets/font/account_circle_black_24dp.svg" alt=""></a>
+                    </li>
+                    <li class="utility-item js-search-btn">
+                        <a class="header-icon"><img src="assets/font/search_black_24dp.svg" alt=""></a>
+                    </li>
+                    <li class="utility-item">
+                        <a class="header-icon"><img src="assets/font/shopping_bag_black_24dp.svg" alt=""></a>
+                    </li>
+                </ul>
+            </div>
+            <div class="header-nav-down">
+                <ul class="main-menu-list">
+                    <div id="underline"></div>
+                    <a class="header-nav-link" href="home.html">
+                        <li class="main-menu-item">Home</li>
+                    </a>
+                    <a class="header-nav-link" href="products.html">
+                        <li class="main-menu-item">Shop</li>
+                    </a>
+                    <a class="header-nav-link" href="#">
+                        <li class="main-menu-item">Brand</li>
+                    </a>
+                    <a class="header-nav-link" href="#">
+                        <li class="main-menu-item">New Arrivals</li>
+                    </a>
+                    <a class="header-nav-link" href="#">
+                        <li class="main-menu-item">Sale</li>
+                    </a>
+
+                </ul>
+            </div>
+            <div class="search-box-container js-modal">
+                <div class="search-box js-modal-container">
+                    <div class="search-box-header">
+                        <div class="search-title">
+                            SEARCH PRODUCT
+                        </div>
+                        
+                        <div class="search-box-exit js-modal-close">
+                            <img src="assets/font/close_black_24dp.svg" style="width: 100%;" alt="Close">
+                        </div>
+                    </div>
+                    <div class="search-wrapper">
+                        <input class="search-input-real-time" type="text" placeholder="Search..."/>
+                        <img class="search-submit-button" src="assets/font/search_black_24dp.svg" alt="Search">
+                    </div>
+                </div>
+            </div>
+        </header>
+
+
+        <div class="payment-container row">
+            <div class="payment-detail col-6">
+                <div class="payment-status">
+                    Payment Successful
+                    <i class="icon-success">
+                        <img class="success-icon" src="assets/font/Eo_circle_green_checkmark.png" alt="Success">
+                    </i>
+                </div>
+                <div class="payment-description">
+                    Woohoo! Your order was successfully submit. <br>
+                    Thank you for choosing Amora, we are on the way to preparing your order.
+                </div>
+                <div class="payment-navigations">
+                    <button class="payment-actions">
+                        Back To Home
+                    </button>
+                    <button class="payment-actions">
+                        View Your Order
+                    </button>
+                </div>
+            </div>
+            <div class="payment-img-wrap col-4">
+                <div class="success-img-wrap">
+                    <img src="assets/images/paymentSuccess.png" alt="Success">
+                </div>
+            </div>
+            <!-- Payment fail html -->
+
+            <!-- <div class="payment-detail col-6">
+                <div class="payment-status">
+                    Payment Fail
+                    <i class="icon-success">
+                        <img class="success-icon" src="assets/font/PaymentFailIcon.png" alt="Fail">
+                    </i>
+                </div>
+                <div class="payment-description">
+                    Oops! Something has gone wrong with your order.<br>
+                    Sorry about this inconvenience, please check your cart again!
+                </div>
+                <div class="payment-navigations">
+                    <button class="payment-actions">
+                        Back To Home
+                    </button>
+                    <button class="payment-actions">
+                        View Your Cart
+                    </button>
+                </div>
+            </div>
+
+            <div class="payment-img-wrap col-4">
+                <div class="success-img-wrap">
+                    <img src="assets/images/paymentFail.png" alt="Success">
+                </div>
+            </div> -->
+
+            <!-- End of payment fail -->
+           
+        </div>
+
+
+
+
+        <footer class="footer">
+            <div class="footer-top row">
+
+                <div class="footer-inner-block col-4">
+                    <h4 class="footer-inner-title">Introduction</h4>
+                    <div class="footer-container">
+                        <div class="inner-footer-text">
+                            <!-- Một cửa hàng nước hoa giúp bạn sống lại cùng những kí ức đã bị lãng quên bằng hương thơm -->
+                            Amora Shop, a perfume store that will bring to life again a forgotten memory by fragrance!
+                        </div>
+                        <div class="footer-shop-logo-container">
+                            <img class="footer-shop-logo" src="assets/images/LogoDoneEdited.png" alt="AmoraShop logo">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="footer-inner-block col-8">
+                    <h4 class="footer-inner-title">Information</h4>
+                    <div class="footer-container">
+                        <a href="tel:0836935789" class="inner-footer-text">   
+                            Phone: 0836935789
+                        </a><br>
+                        <a href="mailto:hongducnguyenho0@gmail.com" class="inner-footer-text">
+                            Gmail: hongducnguyenho0@gmail.com
+                        </a>
+                        <div class="inner-footer-text">
+                            Address: FPT University 
+                            Lô E2a-7, Đường D1, Đ. D1, Long Thạnh Mỹ, Thành Phố Thủ Đức, Thành phố Hồ Chí Minh 700000, Việt Nam
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <div class="copyright">
+                Copyright © 2023 Amora Shop. Powered by SWP391 FPT University
+            </div>
+        </footer>
+    </div>
+
+
+
+
+
+</body>
+
+</html>
